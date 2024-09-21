@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { Modal } from "react-responsive-modal";
 import { useState, useEffect } from "react";
 

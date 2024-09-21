@@ -39,9 +39,6 @@ export default function Detalhes() {
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
   const temaEscuro = queryParams.get("temaEscuro") === "true";
-  if (queryParams.get("trocarTema") === "true" && typeof trocarTema === "function") {
-    trocarTema(); 
-}
 
   useEffect(() => {
     const carregarHoteis = JSON.parse(localStorage.getItem("@hotel"));
@@ -202,7 +199,7 @@ export default function Detalhes() {
       [styles.light]: !temaEscuro,
       [styles.container_detalhes]: true,
     })}>
-      <Header temaEscuro={temaEscuro} trocarTema={trocarTema} />
+      <Header temaEscuro={temaEscuro} />
 
       <div
         className={classNames({

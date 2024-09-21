@@ -30,7 +30,7 @@ export default function Produto(props) {
         </div>
       </div>
       <Link
-        to={`/detalhes/${props.produto.id}?temaEscuro=${props.temaEscuro}&trocarTema=${props.trocarTema}`}
+        to={`/detalhes/${props.produto.id}?temaEscuro=${props.temaEscuro}`}
         className={classNames({
           [styles.linkDark]: props.temaEscuro,
           [styles.linkLight]: !props.temaEscuro,
