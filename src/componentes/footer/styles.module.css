@@ -1,0 +1,14 @@
+container_footer {
+    width: 100%;
+}
+
+footer {
+    background-color: #1a3a29;
+    font-family: "Raleway", sans-serif;
+    height: 20vh;
+    padding: 20px;
+    margin-top: 40vh;
+    color: #fff
+}
+
+

@@ -1,0 +1,153 @@
+.container_home {
+  padding: 20px;
+  font-family: "Raleway", sans-serif;
+  height: auto;
+}
+
+.container_lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  width: auto;
+  height: auto;
+}
+
+.botao_add {
+  background-color: #b7ebd4;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  border-radius: 25px;
+  border: none;
+  box-shadow: 50px 52px 54px -24px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  cursor: pointer;
+
+  transition: 0.3s ease all;
+}
+
+.container_formModal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+  width: 70vw;
+  padding: 20px;
+}
+
+.container_formModal h3 {
+  font-size: 1.5em;
+  margin-bottom: 2px;
+}
+
+.container_formModal p {
+  font-size: 1.2em;
+  align-self: flex-start;
+}
+
+.container_formModal input,
+textarea {
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: 0;
+  border: 1px solid #3b9e68;
+  margin-bottom: 5px;
+  font-family: "Raleway", sans-serif;
+}
+
+.container_formModal textarea {
+  resize: none;
+  height: 100px;
+}
+
+.container_formModal .divInterna {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  justify-content: space-evenly;
+}
+
+.container_formModal .divInterna div {
+  display: flex;
+  flex-direction: column;
+}
+
+.container_formModal .botoes {
+  display: flex;
+  gap: 10px;
+}
+
+.container_formModal button:first-child {
+  background-color: #3b9e68;
+  border: 0;
+  font-size: 1.2em;
+  padding: 7px 20px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.container_formModal button:last-child {
+  background-color: transparent;
+  border: 1px solid #3b9e68;
+  color: #3b9e68;
+  font-size: 1.2em;
+  padding: 7px 20px;
+  border-radius: 10px;
+}
+
+.container_formModal span {
+  color: #ad2222;
+  font-size: 0.8em;
+  align-self: flex-start;
+}
+
+.filtros input {
+  border-radius: 15px;
+  padding: 5px;
+  width: 60vw;
+  margin: 5px;
+}
+
+.filtros select {
+  padding: 5px;
+  border: none;
+  border-radius: 15px;
+  background-color: #b7ebd4;
+  margin: 5px;
+}
+
+.dark {
+  background-color: #1d201f;
+  color: #fff;
+}
+
+.light {
+  background-color: #fff;
+}
+
+@media (min-width: 550px) {
+  .container_lista {
+    justify-content: flex-start;
+  }
+
+  .botao_add:hover {
+    background-color: #3b9e68;
+    color: #fff;
+  }
+
+  .container_formModal button:hover {
+    cursor: pointer;
+    background-color: #b7ebd4;
+  }
+
+  .container_formModal {
+    max-width: 700px;
+  }
+}
