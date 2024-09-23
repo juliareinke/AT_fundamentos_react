@@ -6,8 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "classnames": "^2.5.1",
@@ -29,15 +30,8 @@
     "eslint-plugin-react-refresh": "^0.4.9",
     "gh-pages": "^6.1.1",
     "globals": "^15.9.0",
-    "vite": "^5.4.1"
+    "vite": "^5.4.1",
+    "vite-plugin-gh-pages": "^1.0.0"
   },
-  "homepage": "https://juliareinke.github.io/at_fund_react/",
-  "scripts": {
-    "predeploy": "npm run build",	
-    "deploy": "gh-pages -d dist",
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  }
+  "homepage": "https://juliareinke.github.io/at_fund_react/"
 }
